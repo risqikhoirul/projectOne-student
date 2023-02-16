@@ -20,7 +20,7 @@ router
     });
   })
   .post(
-    multerMiddleware,
+    multerMiddleware(),
     uploadImageMiddleware,
     catchAsync(async (req, res, next) => {
       try {
